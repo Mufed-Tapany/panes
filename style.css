@@ -16,7 +16,7 @@ main {
     width: 700px;
     height: 425px;
     border: 1px solid black;
-    /*overflow: hidden;*/
+    overflow: hidden;
     user-select: none;
 }
 
