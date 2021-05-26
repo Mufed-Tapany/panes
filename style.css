@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 7rem 20rem;
+}
+
+.pane {
+    position: relative;
+    width: 700px;
+    height: 425px;
+    border: 1px solid black;
+    /*overflow: hidden;*/
+    user-select: none;
+}
+
+.pane .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: silver;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.pane .img img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.pane .slider {
+    position: absolute;
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    background-color: black;
+    cursor: ew-resize;
+}
